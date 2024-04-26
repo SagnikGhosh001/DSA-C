@@ -1,0 +1,19 @@
+Function and Signature:
+
+malloc(): Stands for "memory allocation." It is used to allocate a specified number of bytes of memory. Its signature is typically void* malloc(size_t size);.
+calloc(): Stands for "contiguous allocation." It is used to allocate a specified number of blocks of memory, each of a specified size. Its signature is void* calloc(size_t num_elements, size_t element_size);.
+Initialization:
+
+malloc(): The memory allocated by malloc() is not initialized. The content of the allocated memory block is undetermined until explicitly set by the program.
+calloc(): The memory allocated by calloc() is initialized to zero. This is a key difference, and it can be useful, for example, when dealing with arrays and matrices where you want all elements to start with a known value.
+Arguments:
+
+malloc(): Takes a single argument representing the total number of bytes to allocate.
+calloc(): Takes two arguments - the number of elements to allocate and the size of each element in bytes.
+Return Type:
+
+Both functions return a pointer to the first byte of the allocated memory if successful. If they fail to allocate memory, they return NULL.
+Common Usage:
+
+malloc(): Commonly used when you need to allocate a block of memory of a specified size.
+calloc(): Commonly used when allocating memory for arrays, matrices, or when you want the allocated memory to be initialized to zero.

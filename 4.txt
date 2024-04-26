@@ -1,0 +1,20 @@
+void deleteNode()
+{
+	struct node *t, *node;
+	t = head;
+	node = head;
+	if (head == NULL)
+	{
+		printf("The list is empty\n");
+	}
+	else
+	{
+		while (t->next != NULL)
+		{
+			node = t;
+			t = t->next;
+		}
+		node->next = NULL;
+		free(t);
+	}
+}

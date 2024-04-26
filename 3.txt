@@ -1,0 +1,16 @@
+NULL:
+
+Definition: NULL typically represents a special value that indicates the absence of a meaningful value or a pointer that does not point to any memory location.
+Usage: In languages like C and C++, NULL is often used to represent a null pointer, indicating that the pointer is not pointing to a valid object or memory location. It is commonly used in pointer-related operations
+
+void:
+Definition: void is a data type used to indicate that a function does not return any value or that a pointer does not point to any specific type.
+Usage:
+In function declarations or definitions, void is used to indicate that the function does not return a value.
+In the context of pointers, void* is a generic pointer type that can be used to store the address of any data type.
+
+In summary, NULL is often associated with the absence of a valid reference, typically used with pointers, while void is associated with the absence of a specific type, used in the context of function return types or generic pointers (void*). They serve different purposes and are not interchangeable.
+
+
+
+
